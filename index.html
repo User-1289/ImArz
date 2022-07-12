@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alphabetical order</title>
+<style>
+#text{
+width:400px;
+height:35px;
+font-size:20px;
+border: 2px solid black;
+align-items:left;
+position:relative;
+left:500px;
+}
+button{
+position:relative;
+left:600px;
+top:5px;
+}
+.big{
+width:700px;
+height:40px;
+font-size:20px;
+border: 10px solid black;
+align-items:center;
+position:relative;
+left:500px;
+}
+</style>
+</head>
+<body id="body">
+<input id="text"type="text"><br>
+<button onclick="alpha()">Change to alphabetical order</button>
+<div id="div"></div>
+<script>
+
+let vText = document.getElementById('text')
+
+vText.addEventListener('dblclick', () => {
+//document.getElementById('text').classList.toggle('big')
+vText.style.height = "40px"
+vText.style.width = "700px"
+})
+vText.addEventListener('click', () => {
+vText.style.height = "35px"
+vText.style.width = "400px"
+})
+function alpha(){
+let vText = document.getElementById('text').value
+let words_org = vText.split(' ')
+vText=vText.toLowerCase()
+let words = vText.split(' ')
+words.sort()
+for (let element of words){
+alert(element)
+}
+}
+</script>
+</body>
+</html
+ 
