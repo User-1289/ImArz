@@ -2,18 +2,15 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alphabetical order</title>
+<title>Alphabetical order copy </title>
 <style>
 #text{
 width:400px;
 height:35px;
 font-size:20px;
 border: 2px solid black;
-align-items:left;
-position:relative;
-left:500px;
 }
-button{
+.buttont{
 position:relative;
 left:600px;
 top:5px;
@@ -34,8 +31,10 @@ text-align:center;
 </head>
 <body id="body">
 <h2>Type any name and separate them with a space and<br> it will change to alphabetical order.</h2>
-<input id="text"type="text"><br>
-<button onclick="alpha()">Change to alphabetical order</button>
+<table align="center">
+<tr> <td align="center"><input id="text"type="text"></td></tr><br>
+<tr> <td align="center"><button onclick="alpha()">Change to alphabetical order</button></td> </tr>
+</table>
 <div id="div"></div>
 <script>
 
